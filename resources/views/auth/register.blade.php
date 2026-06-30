@@ -1,18 +1,18 @@
 <x-guest-layout>
-    <form class="text-[#ffffff]" method="POST" action="{{ route('register') }}">
+    <form class="text-white" method="POST" action="{{ route('register') }}">
         @csrf
 
         <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+            <x-text-input id="name" class="block mt-1 w-full text-white" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
 
         <!-- Email Address -->
         <div class="mt-4">
             <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
+            <x-text-input id="email" class="block mt-1 w-full text-white" type="email" name="email" :value="old('email')" required autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
@@ -20,7 +20,7 @@
         <div class="mt-4">
             <x-input-label for="password" :value="__('Password')" />
 
-            <x-text-input id="password" class="block mt-1 w-full text-[#ffffff]"
+            <x-text-input id="password" class="block mt-1 w-full text-white"
                             type="password"
                             name="password"
                             required autocomplete="new-password" />
@@ -32,7 +32,7 @@
         <div class="mt-4">
             <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
 
-            <x-text-input id="password_confirmation" class="block mt-1 w-full color-white"
+            <x-text-input id="password_confirmation" class="block mt-1 w-full text-white"
                             type="password"
                             name="password_confirmation" required autocomplete="new-password" />
 
@@ -48,9 +48,9 @@
             required
         >
         
-        <span class="ms-2 text-sm text-gray-600 dark:text-gray-400">
+        <span class="ms-2 text-sm text-white">
             I agree to the 
-            <a href="#" onclick="alert('Forum Rules:\n1. Be respectful to lecturers and peers.\n2. No plagiarism.\n3. Keep discussions academic.'); return false;" class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800">
+            <a href="#" onclick="alert('Forum Rules:\n1. Be respectful to lecturers and peers.\n2. No plagiarism.\n3. Keep discussions academic.'); return false;" class="underline text-sm text-white hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 discussion forum rules and instructions
             </a>
         </span>
@@ -59,7 +59,7 @@
     <x-input-error :messages="$errors->get('terms')" class="mt-2" />
 </div>
         <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
+            <a class="underline text-sm text-white hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
                 {{ __('Already registered?') }}
             </a>
 
