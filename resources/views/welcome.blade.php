@@ -49,7 +49,7 @@
                     "tertiary": "#1d2123",
                     "on-error": "#ffffff",
                     "surface-tint": "#617faf",
-                    "primary": "#002045",
+                    "primary": "#6da9ee",
                     "surface-bright": "#faf8ff",
                     "outline": "#74777f",
                     "on-tertiary": "#ffffff",
@@ -114,7 +114,7 @@
     </script>
 
     </head>
-    <body class="bg-gradient-to-br from-orange-600 to-orange-800 bg-white/10 backdrop-blur-md border border-white/20 color:white shadow-2xl rounded-2xl  to-pink-500 color-gray-500 blur-3 opacity-1 text-[#1b1b18] flex p-6 lg:p-8 items-center lg:justify-center min-h-screen flex-col">
+    <body class="bg-gradient-to-br from-slate-950 via-slate-900 to-zinc-900 bg-white/10 backdrop-blur-md border border-white/20 color:white shadow-2xl rounded-2xl  to-pink-500 color-gray-500 blur-3 opacity-1 text-[#1b1b18] flex p-6 lg:p-8 items-center lg:justify-center min-h-screen flex-col">
         <header class="w-full lg:max-w-4xl max-w-[335px] text-sm mb-6 not-has-[nav]:hidden">
             @if (Route::has('login'))
                 <nav class="flex items-center justify-end gap-4">
@@ -156,13 +156,13 @@
           <div class="relative z-10 px-margin-desktop max-w-container-max-width mx-auto w-full">
           <div class="grid md:grid-cols-2 gap-gutter items-center">
           <div class="space-y-base">
-           <span class=" mb-6 font-display-lg font-label-sm px-3 py-1 text-display-lg-mobile  md:text-display-lg rounded-full mb-4">
+           <span class=" mb-6 font-display-lg text-white font-label-sm px-3 py-1 text-display-lg-mobile  md:text-display-lg rounded-full mb-4">
                <h1>SMART DISCUSSION FORUM</h1>
           </span>
-          <span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm rounded-full mb-4">
+          <span class="inline-block px-3 py-1 bg-white/10  backdrop-blur-md text-white font-label-sm text-label-sm rounded-full mb-4">
             ACADEMIC EXCELLENCE</span>
           <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">Where Academic Minds Meet.</h1>
-          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-8">
+          <p class="font-body-lg text-body-lg text-white max-w-lg mb-8">
                             Join the premier discussion forum for scholars, researchers, and students to collaborate on the future of knowledge. A secure environment for rigorous peer review and interaction.
                         </p>
            <div class="flex flex-wrap gap-4">
@@ -171,7 +171,7 @@
           </div>
           <div class="hidden md:block relative">
           <div class="rounded-xl overflow-hidden shadow-2xl border border-outline-variant">
-         <img class="w-full h-[500px] object-cover" data-alt="A high-resolution, professional photograph of a modern university library with clean glass architecture and sunlight streaming onto scholars engaged in focused study. The scene conveys a sense of intellectual depth, prestige, and contemporary academic collaboration. The color palette is dominated by soft whites and cool primary blues, emphasizing a scholarly and trustworthy atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFn6QKPnVoOHwByNspb7ZpZ5KFViobWyThMWVUhRK2RcIRI8CCuEthtBiZiqypNOZj2yoHVGvf53fa2f5qiE8sqE2i634s4manirjO73fNNsG6ZxNVy2zDh3p9OrqHzcg69FXvs6oh0El5lv4T4MFxEv2ddERYLCYoYNrC3i2gIJQ4B4urnDZK0c8PVrhJ5R_Vp5i2AALWSe7MDA3bL928nAALOsZQWS6RxM_tSh4_rljFKbvWOttX2tgM-zK59BuN8xpjiB6IIZ2B"/>
+         <img class="w-full h-[500px] object-cover" data-alt=" " src="{{ asset('pretty-teenager-happy-be-back-university.jpg') }}"/>
          </div>
 
 
